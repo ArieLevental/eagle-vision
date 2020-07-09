@@ -1,27 +1,6 @@
 .form {
   width: 700px;
-  background: radial-gradient(black 3px, transparent 4px),
-    radial-gradient(black 3px, transparent 4px),
-    linear-gradient(#fff 4px, transparent 0),
-    linear-gradient(
-      45deg,
-      transparent 74px,
-      transparent 75px,
-      #a4a4a4 75px,
-      #a4a4a4 76px,
-      transparent 77px,
-      transparent 109px
-    ),
-    linear-gradient(
-      -45deg,
-      transparent 75px,
-      transparent 76px,
-      #a4a4a4 76px,
-      #a4a4a4 77px,
-      transparent 78px,
-      transparent 109px
-    ),
-    #fff;
+  background: rgba(255, 255, 255, 0.5);
   background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
   background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
   margin-right: auto;
@@ -34,7 +13,22 @@
 }
 
 .button {
-  background-color: rgb(17, 0, 255);
+  background-color: rgb(145, 145, 145);
+  backface-visibility: hidden;
+  transform: scale(1);
+  transition: transform 0.25s ease-out;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+  width: 30%;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .GuideText {
@@ -42,4 +36,13 @@
   text-align: center;
   /* max-width: 670px; */
   font-size: 1.5rem;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.103);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  width: 70%;
 }

@@ -1,0 +1,27 @@
+.boundingBox {
+  position: absolute;
+  box-shadow: 0 0 0 3px #ffffff inset;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.imageZone {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.imageHolder {
+  margin-top: 2rem;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  /* box-shadow: 0 0 4px 1px #000, 0 0 0 8px #fff, 0 0 4px 10px rgba(0, 0, 0, 0.8); */
+}
+
+.imageHolder img {
+  box-shadow: 0 0 4px 1px #000, 0 0 0 8px #fff, 0 0 4px 10px rgba(0, 0, 0, 0.8);
+}

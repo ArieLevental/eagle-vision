@@ -1,19 +1,18 @@
 import React from "react";
 import styles from "./Navigation.module.css";
 import Logo from "../Logo/Logo";
+import moon from "../../assets/moon.png";
 
 const Navigation = ({ onRouteChange, isSignedIn }) => {
   if (isSignedIn) {
     return (
       <nav className={styles.Nav}>
         <Logo />
-        <div
-          onClick={() => onRouteChange("signout")}
-          className="f3 link dim black underline pa3 pointer"
-        >
+        <div onClick={() => onRouteChange("signout")} className={styles.Link}>
           {" "}
           Sign Out{" "}
         </div>
+        <img className={styles.moon} src={moon} />
       </nav>
     );
   } else {
@@ -27,12 +26,13 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
           </div>
           <div
             onClick={() => onRouteChange("register")}
-            className="f3 link dim black underline pa3 pointer"
+            className={styles.Link}
           >
             {" "}
             Register{" "}
           </div>
         </div>
+        <img className={styles.moon} src={moon} />
       </nav>
     );
   }

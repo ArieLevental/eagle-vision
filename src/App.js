@@ -6,7 +6,27 @@ import FaceRecognition from "./components/FaceRecognition/FaceRecognition";
 import Rank from "./components/Rank/Rank";
 import Register from "./components/Register/Register";
 import Signin from "./components/Signin/Signin";
-import "./App.css";
+import Footer from "./components/Footer/Footer";
+import styles from "./App.module.css";
+import Particles from "react-particles-js";
+
+const particlesOptions = {
+  particles: {
+    number: {
+      value: 30,
+      density: {
+        enable: true,
+        value_area: 800,
+      },
+    },
+    move: {
+      speed: 15,
+    },
+    size: {
+      value: 3,
+    },
+  },
+};
 
 const app = new Clarifai.App({
   apiKey: "c63b1f897fdd45e48664cab4ae093598",
@@ -104,13 +124,15 @@ class App extends Component {
   render() {
     const { isSignedIn, imageUrl, route, box } = this.state;
     return (
-      <div className="App">
+      <div className={styles.App}>
+        <Particles className={styles.particles} params={particlesOptions} />
         <Navigation
           isSignedIn={isSignedIn}
           onRouteChange={this.onRouteChange}
         />
+        <Footer />
         {route === "home" ? (
-          <div>
+          <div className={styles.homeScreen}>
             <Rank
               name={this.state.user.name}
               entries={this.state.user.entries}

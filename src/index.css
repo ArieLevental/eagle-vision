@@ -5,6 +5,13 @@
   src: url("./assets/TTNorms-Medium.otf");
 }
 
+@font-face {
+  font-family: "TT Norms Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/TTNorms-Light.otf");
+}
+
 body {
   margin: 0;
   font-family: "TT Norms", "Montserrat", "Courier New", -apple-system,
@@ -17,6 +24,11 @@ body {
   /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
 
   /* background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%); */
+  background: radial-gradient(
+    circle,
+    rgb(190, 188, 188) 0%,
+    rgba(213, 213, 213, 1) 100%
+  );
 }
 
 code {
