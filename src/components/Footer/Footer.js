@@ -5,7 +5,7 @@ import footerImg from "../../assets/footer.png";
 const footer = () => {
   return (
     <div className={styles.footer}>
-      <img className={styles.footerImage} src={footerImg} />
+      <img className={styles.footerImage} src={footerImg} alt="footerImg" />
       <div className={styles.text}>
         Made by Arie Levental
         <a href="https://www.linkedin.com/in/arie-levental/">

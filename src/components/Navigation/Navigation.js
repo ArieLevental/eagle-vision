@@ -12,7 +12,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
           {" "}
           Sign Out{" "}
         </div>
-        <img className={styles.moon} src={moon} />
+        <img className={styles.moon} src={moon} alt="moon" />
       </nav>
     );
   } else {
@@ -32,7 +32,7 @@ const Navigation = ({ onRouteChange, isSignedIn }) => {
             Register{" "}
           </div>
         </div>
-        <img className={styles.moon} src={moon} />
+        <img className={styles.moon} src={moon} alt="moon" />
       </nav>
     );
   }

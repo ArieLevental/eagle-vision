@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./imageLinkForm.module.css";
+import Ola from "ola";
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
@@ -21,7 +22,13 @@ const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
             onChange={onInputChange}
             placeholder="Enter Image URL"
           />
-          <button className={styles.button} onClick={onButtonSubmit}>
+          {/*<button className={styles.button} onClick={onButtonSubmit}>
+            Detect
+        </button>*/}
+          <button
+            className={styles.btn + " " + styles.drawBorder}
+            onClick={onButtonSubmit}
+          >
             Detect
           </button>
         </div>
