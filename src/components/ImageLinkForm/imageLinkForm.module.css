@@ -1,0 +1,103 @@
+.form {
+  width: 700px;
+  background: rgba(255, 255, 255, 0.5);
+  background-size: 109px 109px, 109px 109px, 100% 6px, 109px 109px, 109px 109px;
+  background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2rem;
+  box-shadow: 4px 4px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* .button {
+  background-color: rgb(145, 145, 145);
+  backface-visibility: hidden;
+  transform: scale(1);
+  transition: transform 0.25s ease-out;
+  font-size: 1.25rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  color: #fff;
+  width: 30%;
+  text-decoration: none;
+}
+
+.button:hover {
+  transform: scale(1.1);
+} */
+
+.drawBorder {
+  box-shadow: inset 0 0 0 4px rgba(16, 34, 34, 0.5);
+  color: rgba(16, 34, 34, 0.5);
+  transition: color 0.25s 0.0833333333s;
+  position: relative;
+}
+.drawBorder::before,
+.drawBorder::after {
+  border: 0 solid transparent;
+  box-sizing: border-box;
+  content: "";
+  pointer-events: none;
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+}
+.drawBorder::before {
+  border-bottom-width: 4px;
+  border-left-width: 4px;
+}
+.drawBorder::after {
+  border-top-width: 4px;
+  border-right-width: 4px;
+}
+.drawBorder:hover {
+  color: #4b4b4b;
+}
+.drawBorder:hover::before,
+.drawBorder:hover::after {
+  border-color: #4b4b4b;
+  transition: border-color 0s, width 0.25s, height 0.25s;
+  width: 100%;
+  height: 100%;
+}
+.drawBorder:hover::before {
+  transition-delay: 0s, 0s, 0.25s;
+}
+.drawBorder:hover::after {
+  transition-delay: 0s, 0.25s, 0s;
+}
+.btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  line-height: 1.5;
+  font: 700 1.2rem "Roboto Slab", sans-serif;
+  padding: 1em 2em;
+  letter-spacing: 0.05rem;
+}
+.btn:focus {
+  outline: 2px dotted #5b6c6d;
+}
+
+.GuideText {
+  margin: 1rem;
+  text-align: center;
+  /* max-width: 670px; */
+  font-size: 1.5rem;
+}
+
+.input {
+  background-color: rgba(255, 255, 255, 0.103);
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 1.25rem;
+  padding: 0.5rem;
+  width: 70%;
+}

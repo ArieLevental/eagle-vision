@@ -1,18 +1,41 @@
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/TTNorms-Medium.otf");
+}
+
+@font-face {
+  font-family: "TT Norms Light";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./assets/TTNorms-Light.otf");
+}
+
 body {
   margin: 0;
-  font-family: "Courier New", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "TT Norms", "Montserrat", "Courier New", -apple-system,
+    BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell",
+    "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background: linear-gradient(89deg, #FF5EDF 0%, #04C8DE 100%);
+
+  /* background-color: rgba(255, 255, 255, 0.3); */
+  /* background-image: url("https://www.transparenttextures.com/patterns/light-wool.png"); */
+
+  /* background: linear-gradient(89deg, #ff5edf 0%, #04c8de 100%); */
+  background: radial-gradient(
+    circle,
+    rgb(190, 188, 188) 0%,
+    rgba(213, 213, 213, 1) 100%
+  );
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }

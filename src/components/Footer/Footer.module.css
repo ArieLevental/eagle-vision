@@ -1,0 +1,42 @@
+.footer {
+  position: absolute;
+  display: flex;
+  bottom: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+
+.footerImage {
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  opacity: 0.5;
+}
+
+.text {
+  font-family: "TT Norms Light";
+  position: absolute;
+  color: aliceblue;
+  bottom: 1rem;
+
+  text-align: center;
+  width: 100%;
+  font-size: 1.2rem;
+}
+
+.text a {
+  text-decoration: none;
+  color: white;
+  margin: 0 0.5rem;
+  transition: font-size 0.25s ease-out;
+}
+
+.text a:hover {
+  font-size: 5rem;
+}
+
+.Margin {
+  margin-left: 30px;
+}

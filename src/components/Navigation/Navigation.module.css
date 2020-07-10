@@ -1,0 +1,36 @@
+.Link {
+  opacity: 1;
+
+  font-size: 1.5rem;
+  text-decoration: underline;
+  color: #000;
+  padding: 16px;
+  cursor: pointer;
+  margin: 0;
+  transition: opacity 0.15s ease-in;
+}
+
+.Link:hover {
+  opacity: 0.6;
+}
+
+.Nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.NavLinks {
+  display: flex;
+  flex-direction: row;
+}
+
+.moon {
+  position: absolute;
+  z-index: -1;
+  height: 15vh;
+  right: -1.5rem;
+  top: -1.5rem;
+  opacity: 0.5;
+}
