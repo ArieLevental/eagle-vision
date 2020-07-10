@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./imageLinkForm.module.css";
-import Ola from "ola";
 
 const ImageLinkForm = ({ onInputChange, onButtonSubmit }) => {
   return (
