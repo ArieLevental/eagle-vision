@@ -17,7 +17,3 @@ A React Web App for face-recognition service, part of ZTM final project.
 * [Node.js](https://nodejs.org/api/) - Server Side Rendering
 * [Heroku](https://www.heroku.com/home/) - Cloud Platform
 * [PostgreSQL](https://www.postgresql.org/) - Open Source Relational Database
-
-## Acknowledgments
-
-* A great Thank You! for Andrei Neagoie of 'The Complete Web Developer in 2020: Zero to Mastery' course.
